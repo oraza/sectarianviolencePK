@@ -7,7 +7,7 @@ library(DT)
 library(ggthemes)
 
 # my data
-my_data=read.table("C:/Users/Owais/Dropbox/R/Shinyapps/sectarianviolencePK/sectarianviolencePK/data/sect_dataset.csv", header=T, sep=",")
+my_data=read.table("data/sect_dataset.csv", header=T, sep=",")
 # changing date to categorical data 
 #my_data$Year=factor(my_data$Year)
 
@@ -35,10 +35,10 @@ sidebar <- dashboardSidebar(
     hr(),
     # email sharing link
     menuItem("Feedback & suggestion", icon = icon("envelope-o"),
-             href = "mailto:?ow.raza@hotmail.com"),
+             href = "mailto:?ow.raza@hotmail.com?subject=Feedback on VAS app"),
     # source code link
     menuItem("Source code", icon = icon("file-code-o"), 
-             href = "https://github.com/oraza/..."),
+             href = "https://github.com/oraza/sectarianviolencePK"),
     # github fork link
     menuItem("Fork me @ github", icon = icon("code-fork"), 
              href = "https://github.com/oraza/sectarianviolencePK") 
@@ -55,10 +55,10 @@ body <- dashboardBody(
             p("Shia population is estimated between 5% to 20% of total population of Pakistan. Since last five decades,
               Shia in Pakistan have been targeted by various militant groups. Doctors, lawyers, businessmen, teachers and
               other professionals have been under attacks by various Sunni Muslim militant groups, most prominently", 
-              a("Sipah-e-Sahaba", href = "http://www.en.wikipedia.org/wiki/Sipah-e-Sahaba_Pakistan")," and",
-              a("Lashkar-e-Jhangvi.", href="http://en.wikipedia.org/wiki/Lashkar-e-Jhangvi"),"These attacks have
+              a("Sipah-e-Sahaba", href = "https://en.wikipedia.org/wiki/Sipah-e-Sahaba_Pakistan")," and",
+              a("Lashkar-e-Jhangvi.", href="https://en.wikipedia.org/wiki/Lashkar-e-Jhangvi"),"These attacks have
               significantly surged after the end of Afghan War, when local anti-shia milinants came under coaliation with",
-              a("Talibans.", href = "http://www.en.wikipedia.org/wiki/talibans"), style = "font-family: 'times'"),
+              a("Talibans.", href = "https://en.wikipedia.org/wiki/Taliban"), style = "font-family: 'times'"),
             fluidPage(
               fluidRow(
                 column(
@@ -93,7 +93,7 @@ body <- dashboardBody(
                 ),
             br(),
             br(),
-            p(strong("Suggested citation:"), "Voilnce Against Shia: App for exploring and visualizing sectarian violence
+            p(strong("Suggested citation:"), "Violnce Against Shia: App for exploring and visualizing sectarian violence
               in Pakistan, 1968 - 2014, Version 1.0,", style = "font-family: 'times'", 
               tags$img(src = "C_thin.png", width = "10px", height = "10px"), "Owais Raza")
     ),  
@@ -136,11 +136,11 @@ ui <- dashboardPage(
   skin="yellow",
   # add this -> navbarMenu()
   dashboardHeader(
-    title="violence Against Shia",
+    title="Violence Against Shia",
     titleWidth = 250,
     #Facebook Sharing
     tags$li(class = "dropdown",
-            tags$a(href = "http://www.facebook.com/sharer.php?u=https://ow-raza.shinyapps.io/app6/", 
+            tags$a(href = "http://www.facebook.com/sharer.php?u=https://ow-raza.shinyapps.io/sectarianviolencePK/", 
                    target = "_blank", 
                    tags$img(height = "20px", 
                             src = "fb2.png")
@@ -148,7 +148,7 @@ ui <- dashboardPage(
     ),
     # Linkedin link
     tags$li(class = "dropdown",
-            tags$a(href = "http://www.linkedin.com/shareArticle?mini=true&url=https://ow-raza.shinyapps.io/app6/", 
+            tags$a(href = "http://www.linkedin.com/shareArticle?mini=true&url=https://ow-raza.shinyapps.io/sectarianviolencePK/", 
                    target = "_blank", 
                    tags$img(height = "20px", 
                             src = "linkedin.png")
@@ -156,7 +156,7 @@ ui <- dashboardPage(
     ),
     # Twitter link
     tags$li(class = "dropdown",
-            tags$a(href = "http://twitter.com/share?url=https://ow-raza.shinyapps.io/app6/  &text= my first shiny app @reye27",
+            tags$a(href = "http://twitter.com/share?url=https://ow-raza.shinyapps.io/sectarianviolencePK/  &text= my first shiny app @reye27",
                    target = "_blank",
                    tags$img(height = "20px", 
                             src = "twitter.png")

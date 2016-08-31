@@ -1,7 +1,9 @@
 name: sectarianviolencePK
 account: ow-raza
 server: shinyapps.io
-appId: 122419
-bundleId: 542253
+appId: 122462
+bundleId: 542419
 url: https://ow-raza.shinyapps.io/sectarianviolencePK/
-when: 1472284075.06891
+when: 1472315462.96183
+asMultiple: FALSE
+asStatic: FALSE

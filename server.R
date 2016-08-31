@@ -1,6 +1,6 @@
 
 # Reading data set
-my_data=read.table("C:/Users/Owais/Dropbox/R/Shinyapps/sectarianviolencePK/sectarianviolencePK/data/sect_dataset.csv", header=T, sep=",")
+my_data=read.table("data/sect_dataset.csv", header=T, sep=",")
 my_data$Decade=as.factor(my_data$Decade)
 
 
@@ -50,7 +50,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p1)
   })
@@ -63,7 +63,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p2)
   })
@@ -76,7 +76,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p3)
   })
@@ -89,7 +89,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p4)
   })
@@ -104,7 +104,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p5)
   })
@@ -117,7 +117,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p6)
   })
@@ -130,7 +130,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p7)
   })
@@ -143,7 +143,7 @@ server <- function(input, output) {
                   height = 0.5,
                   size = 2,
                   alpha =0.5) + 
-      ggthemes::theme_fivethirtyeight() + scale_colour_gdocs()
+      ggthemes::theme_gdocs() + scale_colour_gdocs()
     
     ggplotly(p8)
   })
